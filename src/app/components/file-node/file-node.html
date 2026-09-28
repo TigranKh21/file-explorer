@@ -1,7 +1,7 @@
 @if (entries) {
   @for (item of entries; track item.key) {
     <div class="node">
-      @if (item.value.type === 'folder') {
+      @if (item.value.type === FOLDER) {
       <details class="node__accordion">
         <summary class="node__wrapper">
           <img class="node__arrow" src='assets/arrow.svg' width="10" height="10">

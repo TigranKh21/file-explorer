@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "server": "json-server fs.json"
+    "server": "json-server server/fs.json"
   },
   "private": true,
   "packageManager": "npm@11.19.0",

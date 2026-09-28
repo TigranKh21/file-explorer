@@ -8,6 +8,8 @@ import {FileTree} from '../../data/models/file-node.model';
   templateUrl: './file-node.html',
 })
 export class FileNode {
+  public FOLDER = 'folder';
+
   @Input() data!: FileTree;
 
   get entries() {
