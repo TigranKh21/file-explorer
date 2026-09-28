@@ -1,0 +1,50 @@
+:host {
+    > * {
+    padding-inline-start: 32px;
+    margin-top: 10px;
+  }
+}
+
+.node {
+  &__folder {
+    width: 42px;
+    height: 30px;
+    background-image: url("/assets/folder.webp");
+    background-size: cover;
+  }
+
+  &__file {
+    width: 30px;
+    height: 42px;
+    background-image: url("/assets/file.webp");
+    background-size: cover;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+    justify-content: start;
+    align-items: center;
+
+    img {
+      .node__folder & {
+        width: 42px;
+        height: 30px
+      }
+      .node__file & {
+        width: 30px;
+        height: 42px;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 12px;
+    text-transform: capitalize;
+  }
+}
+
+  details[open] > summary .node__arrow {
+      transform: rotate(90deg);
+  }
